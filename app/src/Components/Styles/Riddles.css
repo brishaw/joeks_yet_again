@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.right h3 {
+  /* border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000; */
+  height: 50px;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.right p:first-of-type {
+  /* border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000; */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 20px 20px;
+}
+
+.right p.riddle-answer{
+  /* border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000; */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 20px 20px;
+  visibility: hidden;
+}
+
+.right p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  line-height: 27px;
+}
+
+.right .reveal::after {
+  content: "Click for Answer!"
+}

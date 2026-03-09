@@ -1,0 +1,104 @@
+h1, h2, h3, h4, .header .container, .footer .container {
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace; */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  border-left: 2px solid #23abff;
+  align-items: center;
+  filter: drop-shadow(0px 0px 7px #23abff);
+  color: #fff;
+  letter-spacing: -1.27px;
+}
+
+.logo {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h3 {
+  padding-left: 10px;
+}
+
+p {
+  color: #ffffff;
+}
+
+button {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../Images/bg_1.jpg');
+  background-size: cover;
+  background-position: top center;
+}
+
+.header, .footer {
+  flex-shrink: 0;
+  background-color: rgba(0,0,0,.57);
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.content .box {
+  width: 25%;
+}
+
+.joke-btn {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  background-color: rgba(255,255,255,.17);
+  border: 1px solid rgba(33, 150, 243, 0.21);
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.joke-btn::after {
+  content: "Another One!";
+  font-size: 1.2rem;
+}
+
+.joke-btn:hover {
+  background-color: rgba(255,255,255,.27);
+  transition: 300ms ease all;
+}
+
+@media (max-width: 500px) {
+
+  .content {
+    display: grid;
+    -ms-display: grid;
+  }
+
+  .content .left.box {
+    order: 2;
+  }
+
+  .content .middle.box {
+    order: 1;
+  }
+
+  .content .right.box {
+    order: 3;
+  }
+
+  .content .box, .content .middle.box {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+}
+
+
+
+

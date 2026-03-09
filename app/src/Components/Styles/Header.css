@@ -1,0 +1,84 @@
+.header {
+  padding: 35px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header .container {
+  max-width: 1024px;
+  margin: 0 auto;
+  border-left: none;
+  display: flex;
+}
+
+.header .container .logo {
+  width: 35%;
+  background-color: rgba(255,255,255,.1);
+  transform: rotate(7deg);
+  margin-right: 20px;
+  text-align: center;
+}
+
+.header .container .logo span {
+  font-size: 3.7rem;
+  background-color: rgba(25,255,255,.2);
+  transform: rotate(-12deg);
+  display: block;
+  padding-bottom: 7px;
+}
+
+.header .container .text {
+  width: 65%;
+}
+
+.header .container a, .header .container a:active, .header .container a:visited {
+  color: #23abff;
+  text-decoration: none;
+}
+
+.header .container p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  letter-spacing: .021em;
+}
+
+.header .container p span {
+  color: #23abff;
+  font-size: 2.3rem;
+}
+
+@media (max-width: 1024px) {
+  
+  .header .container {
+    margin: 0 20px;
+  }
+
+}
+
+@media (max-width: 940px) {
+  
+  .header .container {
+    margin: 0 20px;
+  }
+
+  .header .container .logo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .header .container {
+    display: block;
+  }
+  
+  .header .container .logo, .header .container .text {
+    width: auto;
+    margin: 0 20px;
+  }
+
+  .header .container .text {
+    margin-top: 30px;
+  }
+
+}
